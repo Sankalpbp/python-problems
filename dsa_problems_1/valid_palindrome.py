@@ -1,6 +1,6 @@
 def valid_palindrome(string : str) -> bool:
     i = 0
-    j = len(str) - 1
+    j = len(string) - 1
 
     while i < j:
         if string[i] != string[j]:
@@ -9,3 +9,6 @@ def valid_palindrome(string : str) -> bool:
         j -= 1
 
     return True
+
+print(valid_palindrome("aba"))
+print(valid_palindrome("abc"))
